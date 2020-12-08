@@ -15,6 +15,15 @@
 		3CBFFC4B2573FCC10013C0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CBFFC492573FCC10013C0AC /* LaunchScreen.storyboard */; };
 		3CBFFC562573FCC10013C0AC /* ImageFeedApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFC552573FCC10013C0AC /* ImageFeedApplicationTests.swift */; };
 		3CBFFC612573FCC10013C0AC /* ImageFeedApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFC602573FCC10013C0AC /* ImageFeedApplicationUITests.swift */; };
+		3CBFFC84257BE33E0013C0AC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFC83257BE33E0013C0AC /* NetworkManager.swift */; };
+		3CBFFC8A257BE4490013C0AC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFC89257BE4490013C0AC /* Constant.swift */; };
+		3CBFFC92257BE8E10013C0AC /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFC91257BE8E10013C0AC /* NetworkRequest.swift */; };
+		3CBFFCAB257C158F0013C0AC /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFCAA257C158F0013C0AC /* Image.swift */; };
+		3CBFFCB0257C17FF0013C0AC /* JSONResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFCAF257C17FF0013C0AC /* JSONResponseDecoder.swift */; };
+		3CBFFCB5257D36890013C0AC /* ImageFeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFCB4257D36890013C0AC /* ImageFeedInteractor.swift */; };
+		3CBFFCBD257D36AF0013C0AC /* ImageFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFCBC257D36AF0013C0AC /* ImageFeedPresenter.swift */; };
+		3CBFFCDA257D6B4F0013C0AC /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFCD9257D6B4F0013C0AC /* ImageTableViewCell.swift */; };
+		3CBFFCDF257D6FDE0013C0AC /* LazyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFFCDE257D6FDE0013C0AC /* LazyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		3CBFFC5C2573FCC10013C0AC /* ImageFeedApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFeedApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBFFC602573FCC10013C0AC /* ImageFeedApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFeedApplicationUITests.swift; sourceTree = "<group>"; };
 		3CBFFC622573FCC10013C0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CBFFC83257BE33E0013C0AC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3CBFFC89257BE4490013C0AC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3CBFFC91257BE8E10013C0AC /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		3CBFFCAA257C158F0013C0AC /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		3CBFFCAF257C17FF0013C0AC /* JSONResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResponseDecoder.swift; sourceTree = "<group>"; };
+		3CBFFCB4257D36890013C0AC /* ImageFeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFeedInteractor.swift; sourceTree = "<group>"; };
+		3CBFFCBC257D36AF0013C0AC /* ImageFeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFeedPresenter.swift; sourceTree = "<group>"; };
+		3CBFFCD9257D6B4F0013C0AC /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		3CBFFCDE257D6FDE0013C0AC /* LazyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CAD6BD9257E559100B56362 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFC442573FCBE0013C0AC /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		3CBFFC322573FCBE0013C0AC = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +125,14 @@
 		3CBFFC3D2573FCBE0013C0AC /* ImageFeedApplication */ = {
 			isa = PBXGroup;
 			children = (
+				3CAD6BD9257E559100B56362 /* Storyboards */,
+				3CBFFC88257BE4120013C0AC /* Common */,
+				3CBFFC7A2573FE720013C0AC /* Router */,
+				3CBFFC732573FD840013C0AC /* Scenes */,
+				3CBFFC722573FD070013C0AC /* Helper */,
+				3CBFFC712573FCFA0013C0AC /* Models */,
 				3CBFFC3E2573FCBE0013C0AC /* AppDelegate.swift */,
 				3CBFFC402573FCBE0013C0AC /* SceneDelegate.swift */,
-				3CBFFC422573FCBE0013C0AC /* ViewController.swift */,
-				3CBFFC442573FCBE0013C0AC /* Main.storyboard */,
 				3CBFFC472573FCC10013C0AC /* Assets.xcassets */,
 				3CBFFC492573FCC10013C0AC /* LaunchScreen.storyboard */,
 				3CBFFC4C2573FCC10013C0AC /* Info.plist */,
@@ -126,6 +156,99 @@
 				3CBFFC622573FCC10013C0AC /* Info.plist */,
 			);
 			path = ImageFeedApplicationUITests;
+			sourceTree = "<group>";
+		};
+		3CBFFC712573FCFA0013C0AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFCAA257C158F0013C0AC /* Image.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CBFFC722573FD070013C0AC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFC7B2573FE7E0013C0AC /* Network */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3CBFFC732573FD840013C0AC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFC742573FD9E0013C0AC /* ImageCatalog */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3CBFFC742573FD9E0013C0AC /* ImageCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFC782573FDEF0013C0AC /* Interactor */,
+				3CBFFC772573FDE60013C0AC /* Presenter */,
+				3CBFFC762573FDE00013C0AC /* View */,
+				3CBFFC752573FDCF0013C0AC /* ViewControllers */,
+			);
+			path = ImageCatalog;
+			sourceTree = "<group>";
+		};
+		3CBFFC752573FDCF0013C0AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFC422573FCBE0013C0AC /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3CBFFC762573FDE00013C0AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFCD9257D6B4F0013C0AC /* ImageTableViewCell.swift */,
+				3CBFFCDE257D6FDE0013C0AC /* LazyImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CBFFC772573FDE60013C0AC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFCBC257D36AF0013C0AC /* ImageFeedPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3CBFFC782573FDEF0013C0AC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFCB4257D36890013C0AC /* ImageFeedInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3CBFFC7A2573FE720013C0AC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3CBFFC7B2573FE7E0013C0AC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFC83257BE33E0013C0AC /* NetworkManager.swift */,
+				3CBFFC91257BE8E10013C0AC /* NetworkRequest.swift */,
+				3CBFFCAF257C17FF0013C0AC /* JSONResponseDecoder.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		3CBFFC88257BE4120013C0AC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFFC89257BE4490013C0AC /* Constant.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +381,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBFFCDF257D6FDE0013C0AC /* LazyImageView.swift in Sources */,
+				3CBFFCAB257C158F0013C0AC /* Image.swift in Sources */,
+				3CBFFC84257BE33E0013C0AC /* NetworkManager.swift in Sources */,
 				3CBFFC432573FCBE0013C0AC /* ViewController.swift in Sources */,
+				3CBFFCDA257D6B4F0013C0AC /* ImageTableViewCell.swift in Sources */,
+				3CBFFCB0257C17FF0013C0AC /* JSONResponseDecoder.swift in Sources */,
+				3CBFFC8A257BE4490013C0AC /* Constant.swift in Sources */,
 				3CBFFC3F2573FCBE0013C0AC /* AppDelegate.swift in Sources */,
+				3CBFFCBD257D36AF0013C0AC /* ImageFeedPresenter.swift in Sources */,
+				3CBFFC92257BE8E10013C0AC /* NetworkRequest.swift in Sources */,
+				3CBFFCB5257D36890013C0AC /* ImageFeedInteractor.swift in Sources */,
 				3CBFFC412573FCBE0013C0AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
